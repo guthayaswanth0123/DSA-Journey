@@ -1,0 +1,122 @@
+Pointer:
+-> is variable that stores the address of another variable
+Pointers in C++ are a symbolic representation of addresses.
+They enable programs to simulate call-by-reference and create and manipulate dynamic data structures.
+->Pointers store the address of variables or a memory location. 
+->Can be reassigned to point to another variable
+->Can be nullptr
+->Requires dereferencing to access the value
+->Has its own memory address
+
+
+The process of accessing the value present at the memory address pointed by the pointer is called dereferencing. 
+cout<<*P;
+
+
+Pointer Decleartion:
+int *p;
+float *p;
+char *c;
+
+Pointer initilization:
+
+*p=&x;
+
+Types of Pointers:
+1)Null Pointer -> used to avoid garbage values
+  -> pointer that points to nothing
+  int *p=NULL:
+  int *p=nullptr;
+
+2)Void Pointer -> 
+  -> pointer that can store any type of address
+  void *p;
+  -> need typecasting to access values
+3)Wild Pointer 
+ -> pointer not initiliazed
+ int *p;
+
+4)Dangling Pointer
+ pointer pointing to deleted memory
+ int *p = new int;
+ delete p;
+
+
+Advanced Types of pointers:
+1)Duble pointer
+2)Function pointer
+3)Array pointer
+4)Constant pointer
+5)Smart pointer
+
+Pointer Arithmetic:
+
+Incrementing and Decrementing
+Addition of Integer
+Subtraction of Integer
+Subtraction of Two Pointers of the Same Type
+Comparison of Pointers and NULL
+
+
+Pointer to Pointer
+We can also have pointers that point to other pointers. This is called a double pointer
+, and it is useful when working with multi-level data structures like arrays of pointers or dynamic memory management.
+
+
+
+The new and delete keywords are used for dynamic memory allocation (creating memory during program execution
+
+NEW keywords
+-> The new keyword is used to allocate memory dynamically (at runtime).
+int *p = new int
+
+Meaning
+Memory is created in heap memory
+p stores the address of allocated memory
+
+
+DELETE keyword
+-> The delete keyword is used to free allocated memory.
+delete p 
+-> without delete memory leak
+
+
+Normal Varible:
+int x=10;
+stored in stack memory automaticlaly deleted
+
+Dynamic Vraible:
+
+int *p= new int;
+
+must delete manually
+
+
+Why we use pointers in c++?
+1)Direct memory access
+->Pointers allow you to work with memory addresses.
+->This makes C++ fast and efficient
+2)Dynamic Memory allocation
+->Pointers allow creating memory at runtime.
+->Without pointers → dynamic memory not possible.
+3)Data Structures Implementation
+->linkedlist,graphs,trees,heap
+4)System Programming
+-> C++ is used for os,drivers,embeded systems
+->These need hardware-level memory control.
+Pointers make this possible.
+
+
+
+
+pointer functions:
+
+1)call by value
+->In call by value, a copy of the variable is sent to the function.
+->Original variable does NOT change.
+
+
+2)Call by pointer
+->In call by pointer, the address of variable is sent to function.
+->Original variable changes.
+

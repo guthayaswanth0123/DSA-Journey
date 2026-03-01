@@ -1,0 +1,73 @@
+STL:
+->STL (Standard Template Library) is a collection of ready-made classes and functions in C++ that help you write programs faster and easier
+-> STL provides built-in data structures and algorithms.
+-> Instead of writing code from scratch, you can use STL.
+-> it provides ready amde data structyures and algorithms
+STL has 4 Main Parts:
+1)containers -> store data
+->container is an object that stores multiple values
+2)algorithms -> operations on data
+3)Iterators -> traverse containers
+4)Functions/comparators 
+
+1)Cointainers -> a container is a data structure that stores multiple elements (values or objects) in an organized way.
+-> A container is an object that holds a collection of elements like numbers, strings, or objects.
+EX: vector,list,stck,queue,set,map
+Types of Containers:
+i)Sequenece Containers:
+-> store elemenst in order
+EX: Vector -> dynmaic array
+    list -> doubly linked list
+    dequeue -> double ended queue
+    array ->  fixed array
+
+ii) Asscoiative containers -> Store elements sorted automatically
+Ex:set,map,multiset,multimap
+
+iii)Conatiner Adapaters:
+Container adapters are special containers that use another container internally but give restricted operations.
+-> They do NOT store data directly like vector or list.
+-> They adapt another container (like vector, deque, list).
+-> Container adapters are containers that provide a special way to access elements (like stack, queue) using another container internally.
+Ex: Stack,Queue,prority_queue
+
+
+
+2)Algorithms:
+-> STL Algorithms are ready-made functions that perform operations on containers like vector, set, map, deque etc.
+-> Algorithm = Pre-written function to process data in containers
+
+i)sorting algorithms
+ ->sort()
+ ->reverse()
+ ->partial_sort()
+ii)Seraching Algorithms
+ ->find()
+ ->binary_search()
+ ->count()
+iii)Numeric algorithms
+ ->gcd()
+ ->accumulate()
+iV)min/max algorithms
+ ->min()
+ ->max()
+ ->min_element()
+ ->max_element()
+v)Modification algorithms
+ ->fill()
+ ->swap()
+ ->replace()
+
+
+3)Iterators
+-> An iterator is an object that points to elements inside a container and helps you traverse (move through) the container.
+-> Iterator = Pointer-like object used to access container elements
+
+4)Functions/comparators
+functions:
+Functions are used to perform operations on container elements.
+compartaors:
+Comparator = Function used to define custom sorting order
+->Which element should come first?
+
+
